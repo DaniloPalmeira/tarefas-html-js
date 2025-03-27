@@ -13,7 +13,7 @@ Este repositório contém exemplos e exercícios relacionados a HTML e JavaScrip
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/tarefas-html-js.git
+    git clone https://github.com/DaniloPalmeira/tarefas-html-js.git
     ```
 2. Navegue até o diretório:
     ```bash
