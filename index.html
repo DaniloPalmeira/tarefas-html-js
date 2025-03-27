@@ -1,32 +1,36 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Required meta tags -->
+    <!-- ALGUNS METATAGS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Tarefas</title>
 
+    <!-- IMPORTAMOS OS ICONES DO FONT-AWESOME PARA CRIAR BOTÃO BONITINHO -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
+    
+    <!-- IMPORTAMOS O BOOTSTRAP QUE VAI FACILITAR A CRIAÇÃO DE GRADE E ETC -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Tarefas</title>
   </head>
   <body class="bg-dark">
     <div class="row col-12 d-flex justify-content-center">
         <div class="col-10 mt-5 col-sm-5">
             <div class="card" style="background-color: #222;">
+                <!-- DEFINIMOS A "CABEÇA" DO NOSSO SITE, TITULO E BOTÃO DE "RESTAURAR" -->
                 <div class="card-header d-flex">
                     <h1 class="text-white">Lista de tarefas</h1>
                     <div class="d-flex ms-auto">
                         <button class="btn btn-outline-secondary" type="button" id="addNewTask" onClick="recoveryTask();"><i class="fa fa-undo"></i></button>
                     </div>
                 </div>
+                <!-- DEFINIMOS O "CORPO" DO NOSSO SITE, AQUI É ONDE VÃO FICAR AS TAREFAS -->
                 <div class="card-body" id="taskList">
                     <div class="input-group mb-3" id="addNewTaskDiv">
                         <div class="input-group-text">
-                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" disabled>
+                          <input class="form-check-input mt-0" type="checkbox" value="" disabled>
                         </div>
-                        <input id="newTaskContent" type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Adicione uma tarefa">
+                        <input id="newTaskContent" type="text" class="form-control" placeholder="Adicione uma tarefa">
                         <button class="btn btn-outline-secondary" type="button" id="addNewTask" onClick="addNewTask();"><i class="fa fa-check"></i></button>
                     </div>
                 </div>
