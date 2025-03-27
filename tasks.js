@@ -117,7 +117,7 @@ const toogleTaskEditByID = (id) => {
 };
 
 // ADICIONAR NOVA TASK VISUALMENTE
-const addNewTask = (task) => {
+const addNewTask = (task = {}) => {
   console.log(task);
   if (!task.id) {
     task.id = randomID();
